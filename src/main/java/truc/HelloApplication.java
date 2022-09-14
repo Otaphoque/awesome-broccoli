@@ -1,28 +1,29 @@
 package truc;
 
 import javafx.application.Application;
-import javafx.geometry.Pos;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import truc.View.MainView;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws IOException {
 
-        GridPane grid = new GridPane();
-        grid.setAlignment(Pos.CENTER);
-        grid.getChildren().add(new Button("Patate"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/ui/UI.fxml"));
+        Pane content = loader.load();
 
-        Scene scene = new Scene(grid, 300, 300);
+        Scene scene = new Scene(content, 1200, 800);
+
+        stage.setResizable(false);
         stage.setScene(scene);
+        stage.setTitle("K-landar");
         stage.show();
     }
 
