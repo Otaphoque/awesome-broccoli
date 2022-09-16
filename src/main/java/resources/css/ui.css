@@ -29,3 +29,7 @@ Button{
 #pastAssignmentButton:pressed{
     -fx-background-image: url("../images/ButtonPressed.png");
 }
+
+.table-view {
+    -fx-background-color: transparent;
+}

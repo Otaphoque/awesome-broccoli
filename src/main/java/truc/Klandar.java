@@ -5,18 +5,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import truc.View.MainView;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 
-public class HelloApplication extends Application {
+public class Klandar extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/ui/UI.fxml"));
+
+        loader.setLocation(getClass().getResource("/resources/ui/UI.fxml"));
         Pane content = loader.load();
 
         Scene scene = new Scene(content, 1200, 800);
