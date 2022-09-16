@@ -1,0 +1,35 @@
+#mainBackground{
+    -fx-background-image: url("../images/Background.png");
+}
+
+Button{
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+}
+
+#newAssignmentButton{
+    -fx-background-image: url("../images/newAssignmentButton.png");
+}
+
+#newAssignmentButton:hover{
+    -fx-background-image: url("../images/newAssignmentButtonHover.png");
+}
+#newAssignmentButton:pressed{
+    -fx-background-image: url("../images/ButtonPressed.png");
+}
+
+#pastAssignmentButton{
+    -fx-background-image: url("../images/pastAssignmentButton.png");
+}
+
+#pastAssignmentButton:hover{
+    -fx-background-image: url("../images/pastAssignmentButtonHover.png");
+}
+
+#pastAssignmentButton:pressed{
+    -fx-background-image: url("../images/ButtonPressed.png");
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
