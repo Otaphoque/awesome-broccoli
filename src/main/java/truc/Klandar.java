@@ -15,8 +15,7 @@ public class Klandar extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader loader = new FXMLLoader();
-
-        loader.setLocation(getClass().getResource("/resources/ui/UI.fxml"));
+        loader.setLocation(getClass().getResource("/ui/UI.fxml"));
         Pane content = loader.load();
 
         Scene scene = new Scene(content, 1200, 800);
