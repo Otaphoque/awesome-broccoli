@@ -73,8 +73,8 @@
     </MenuBar>
       <Pane id="mainBackground" fx:id="mainBackground" prefHeight="795.0" prefWidth="1200.0" stylesheets="@../css/ui.css">
          <children>
-            <Button id="newAssignmentButton" fx:id="newAssignmentButton" layoutX="100.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleNewAssignment" prefHeight="55.0" prefWidth="250.0" />
-            <Button id="pastAssignmentButton" fx:id="pastAssignmentButton" layoutX="850.0" layoutY="50.0" mnemonicParsing="false" onAction="#handlePastAssignment" prefHeight="55.0" prefWidth="250.0" />
+            <Button text="+ new Assignment" id="newAssignmentButton" fx:id="newAssignmentButton" layoutX="100.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleNewAssignment" prefHeight="55.0" prefWidth="250.0" />
+            <Button text="see past Assignments" id="pastAssignmentButton" fx:id="pastAssignmentButton" layoutX="850.0" layoutY="50.0" mnemonicParsing="false" onAction="#handlePastAssignment" prefHeight="55.0" prefWidth="250.0" />
             <TableView id="tableView" fx:id="tableView" layoutX="100.0" layoutY="155.0" prefHeight="549.0" prefWidth="1000.0">
               <columns>
                 <TableColumn prefWidth="200.0" text="Assignment" />

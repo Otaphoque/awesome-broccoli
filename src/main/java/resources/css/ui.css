@@ -2,32 +2,42 @@
     -fx-background-image: url("../images/Background.png");
 }
 
+@font-face {
+    font-family: 'Storystone';
+    src: url('../fonts/Storystone.ttf');
+}
+
 Button{
-    -fx-background-color: transparent;
-    -fx-background-size: cover;
+    -fx-font: 15px Storystone;
 }
 
 #newAssignmentButton{
-    -fx-background-image: url("../images/newAssignmentButton.png");
+    -fx-background-color: #D5BDAF;
+    -fx-text-fill: #ECECE8;
 }
 
 #newAssignmentButton:hover{
-    -fx-background-image: url("../images/newAssignmentButtonHover.png");
+    -fx-background-color: #ECECE8;
+    -fx-text-fill: #D5BDAF;
 }
 #newAssignmentButton:pressed{
-    -fx-background-image: url("../images/ButtonPressed.png");
+    -fx-background-color: #ECECE8;
+    -fx-text-fill: #ECECE8;
 }
 
 #pastAssignmentButton{
-    -fx-background-image: url("../images/pastAssignmentButton.png");
+    -fx-background-color: #D7CCC2;
+    -fx-text-fill: #ECECE8;
 }
 
 #pastAssignmentButton:hover{
-    -fx-background-image: url("../images/pastAssignmentButtonHover.png");
+    -fx-background-color: #ECECE8;
+    -fx-text-fill: #D7CCC2;
 }
 
 #pastAssignmentButton:pressed{
-    -fx-background-image: url("../images/ButtonPressed.png");
+    -fx-background-color: #ECECE8;
+    -fx-text-fill: #ECECE8;
 }
 
 .table-view {
