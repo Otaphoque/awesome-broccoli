@@ -1,0 +1,18 @@
+#mainBackground{
+    -fx-background-image: url("../images/newWorUIbackground.png");
+}
+
+@font-face {
+    font-family: 'Storystone';
+    src: url('../fonts/Storystone.ttf');
+}
+
+#title {
+    -fx-font: 30px Storystone;
+    -fx-text-fill: #ECECE8;
+}
+
+#nameText {
+    -fx-font: 20px Storystone;
+    -fx-text-fill: #ECECE8;
+}
